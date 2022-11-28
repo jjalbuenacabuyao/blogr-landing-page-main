@@ -25,6 +25,14 @@
   --fs-base: 1rem;
 }
 
+.clr-headings {
+  color: var(--primary-very-dark-blue);
+}
+
+.white-text {
+  color: var(--accent-white);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -43,6 +51,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: var(--fs-base);
   overflow-x: hidden;
+  color: var(--accent-dark-grayish-blue);
 }
 
 img, picture, video, canvas, svg {
