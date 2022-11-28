@@ -1,0 +1,59 @@
+:root {
+  --overpass: 'Overpass', sans-serif;
+  --ubuntu: 'Ubuntu', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --primary-light-red: hsl(356, 100%, 66%);
+  --primary-very-light-red: hsl(355, 100%, 74%);
+  --primary-very-dark-blue: hsl(208, 49%, 24%);
+
+  --accent-white: hsl(0, 0%, 100%);
+  --accent-grayish-blue: hsl(240, 2%, 79%);
+  --accent-dark-grayish-blue: hsl(207, 13%, 34%);
+  --accent-dark-black-blue: hsl(240, 10%, 16%);
+
+  --gradient-very-light-red: hsl(13, 100%, 72%);
+  --gradient-light-red: hsl(353, 100%, 62%);
+  --gradient-gray-blue: hsl(237, 17%, 21%);
+  --gradient-desaturated-blue: hsl(237, 23%, 32%);
+
+  --fs-base: 1rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--fs-base);
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
