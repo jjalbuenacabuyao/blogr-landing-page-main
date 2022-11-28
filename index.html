@@ -19,85 +19,215 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
-    <!-- Product
+    <main>
+      <div class="container">
+        <!-- Header and Hero -->
+        <div class="header-hero-wrapper">
+          <!-- Header -->
+          <header class="header">
+            <a href="#" class="logo">
+              <img src="images/logo.svg" alt="Blogr logo" />
+            </a>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+            <nav class="header__nav">
+              <div class="nav__dropdown">
+                <button>
+                  Product
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt="dropdown arrow icon"
+                  />
+                </button>
+                <ul class="dropdown__content">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Integrations</a></li>
+                </ul>
+              </div>
 
-  Company
+              <div class="nav__dropdown">
+                <button>
+                  Company
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt="dropdown arrow icon"
+                  />
+                </button>
+                <ul class="dropdown__content">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
 
-  About
-  Team
-  Blog
-  Careers
+              <div class="nav__dropdown">
+                <button>
+                  Connect
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt="dropdown arrow icon"
+                  />
+                </button>
+                <ul class="dropdown__content">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+              </div>
+            </nav>
 
-  Connect
+            <button class="header__login">Login</button>
+            <button class="btn-main">Sign Up</button>
+          </header>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+          <!-- Hero Section -->
+          <section class="hero">
+            <h1 class="hero__title">A modern publishing platform</h1>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+            <p class="hero__paragraph">
+              Grow your audience and build your online brand
+            </p>
 
-  Start for Free
-  Learn More
+            <button class="btn-main">Start for Free</button>
 
-  Designed for the future
+            <button class="btn-reverse">Learn More</button>
+          </section>
+        </div>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+        <!-- Feature Section -->
+        <section class="features">
+          <!-- Designed for the Future Section -->
+          <div class="future">
+            <picture>
+              <source
+                srcset="images\illustration-editor-desktop.svg"
+                media="(min-width: 48em)"
+              />
+              <img
+                src="images/illustration-editor-mobile.svg"
+                alt="editor illustration"
+                class="future__illustration"
+              />
+            </picture>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            <h2 class="future__title">Designed for the future</h2>
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+            <h3 class="future__subtitle">Introducing an extensible editor</h3>
+            <p class="future__paragraph">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            <h3 class="future__subtitle">Robust content management</h3>
+            <p class="future__paragraph">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you're in full control.
+            </p>
+          </div>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+          <!-- State of the Art Infrastructure Section -->
+          <div class="infrastructure">
+            <img
+              src="images/illustration-phones.svg"
+              alt="mobile phone illustration with Blogr logo"
+              class="infrastructure__illustration"
+            />
 
-  Product
+            <h2 class="infrastructure__title">
+              State of the Art Infrastructure
+            </h2>
+            <p class="infrastructure__paragraph">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+          <!-- Free, Powerfull Tooling Section -->
+          <div class="free-powerful">
+            <picture>
+              <source
+                srcset="images\illustration-laptop-desktop.svg"
+                media="(min-width: 48em)"
+              />
+              <img
+                src="images/illustration-laptop-mobile.svg"
+                alt="laptop mockup"
+                class="free-powerful__illustration"
+              />
+            </picture>
 
-  Company
+            <h2 class="free-powerfull__title">Free, open, simple</h2>
+            <p class="free-powerful__paragraph">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
 
-  About
-  Team
-  Blog
-  Careers
+            <h2 class="free-powerfull__title">Powerful tooling</h2>
+            <p class="free-powerful__paragraph">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </section>
 
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn -->
+        <!-- Footer -->
+        <footer class="doc-footer">
+          <a href="#" class="logo">
+            <img src="images/logo.svg" alt="Blogr logo">
+          </a>
+
+          <div class="links">
+            <p>Product</p>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div class="links">
+            <p>Company</p>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          
+          <div class="links">
+            <p>Connect</p>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </main>
   </body>
 </html>
