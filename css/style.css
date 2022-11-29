@@ -25,6 +25,9 @@
   --gradient-desaturated-blue: hsl(237, 23%, 32%);
   /* Font sizes */
   --fs-base: 1rem;
+  --fs-18: 1.125rem;
+  /* Paddings */
+  --p-24: 1.5rem;
 }
 
 .clr-headings {
@@ -49,16 +52,23 @@ html, body {
 }
 
 body {
-  line-height: 1.7;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-size: var(--fs-base);
   overflow-x: hidden;
   color: var(--accent-dark-grayish-blue);
+  font-family: var(--overpass);
+  font-weight: var(--fw-light);
 }
 
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 input, button, textarea, select {
@@ -67,4 +77,96 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+/* Header styles */
+.header-hero-wrapper {
+  background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(to top left, var(--gradient-light-red), var(--gradient-very-light-red));
+  background-repeat: no-repeat;
+  background-position: 36% 36%;
+  background-color: var(--primary-light-red);
+
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  border-bottom-left-radius: 8rem;
+}
+
+.header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  padding-inline: var(--p-24);
+  padding-block-start: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.nav-toggle {
+  border: none;
+  width: 2rem;
+  height: 1.125rem;
+
+  background-image: url("../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.header__nav {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: center;
+  padding-inline: var(--p-24);
+}
+
+.hero > :nth-child(3){
+  justify-self: end;
+}
+
+.hero > :nth-child(4){
+  justify-self: start;
+}
+
+.hero__title {
+  grid-column: span 2;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: var(--fw-semibold);
+}
+
+.hero__paragraph{
+  grid-column: span 2;
+  font-size: var(--fs-18);
+  padding-block-end: 1.5rem;
+}
+
+.btn-main, .btn-reverse{
+  font-family: var(--ubuntu);
+  font-weight: var(--fw-medium);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.btn-main{
+  border: none;
+  background-color: var(--accent-white);
+  color: var(--primary-light-red);
+}
+
+.btn-reverse {
+  border: 1px solid var(--accent-white);
+  background-color: transparent;
+  color: var(--accent-white);
 }
