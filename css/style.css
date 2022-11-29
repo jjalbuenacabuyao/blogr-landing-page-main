@@ -52,7 +52,7 @@ html, body {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   font-size: var(--fs-base);
   overflow-x: hidden;
@@ -152,6 +152,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-block-end: 1.5rem;
 }
 
+/* Buttons */
 .btn-main, .btn-reverse{
   font-family: var(--ubuntu);
   font-weight: var(--fw-medium);
@@ -169,4 +170,34 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--accent-white);
   background-color: transparent;
   color: var(--accent-white);
+}
+
+/* Features */
+.features {
+  padding: 6rem var(--p-24);
+  text-align: center;
+  display: grid;
+  gap: 5rem;
+}
+
+/* Features (Future) */
+.future{
+  display: grid;
+  gap: 3rem;
+}
+
+.future__title {
+  grid-row: 1;
+  font-size: 1.6rem;
+}
+
+.future__text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.future__subtitle{
+  font-size: 1.8rem;
+  line-height: 1.3;
 }
