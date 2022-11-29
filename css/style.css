@@ -178,6 +178,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   display: grid;
   gap: 5rem;
+  width: 100vw;
 }
 
 /* Features (Future) */
@@ -199,5 +200,44 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .future__subtitle{
   font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+/* Features (Infrastructure) */
+
+.infrastructure {
+  /* originally 1014 x 1018 */
+  background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(to bottom right, var(--gradient-gray-blue), var(--gradient-desaturated-blue));
+  background-repeat: no-repeat;
+  background-position: 50% 800%;
+  background-size: 155vw;
+
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  padding: 13rem var(--p-24) 6rem;
+  margin-top: 12rem;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+}
+
+.infrastructure__illustration {
+  position: absolute;
+  top: -12rem;
+  left: 0;
+}
+
+.infrastructure__text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infrastructure__title{
+  font-size: 2.2rem;
   line-height: 1.3;
 }
