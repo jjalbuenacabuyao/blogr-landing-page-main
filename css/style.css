@@ -208,8 +208,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .infrastructure {
   background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(to bottom right, var(--gradient-gray-blue), var(--gradient-desaturated-blue));
   background-repeat: no-repeat;
-  background-position: 50% 800%;
-  background-size: 155vw;
+  background-position: top -15rem right -7rem, 0 0;
+  background-size: 158vw;
 
   width: 100vw;
   position: relative;
