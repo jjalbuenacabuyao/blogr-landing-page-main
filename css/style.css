@@ -95,6 +95,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Header styles */
 .header-hero-wrapper {
   background-image: url("../images/bg-pattern-intro-mobile.svg"),
@@ -277,4 +281,31 @@ h6 {
 .free-powerful__text{
   display: grid;
   gap: 1rem;
+}
+
+/* Footer */
+.doc-footer{
+  display: grid;
+  gap: 2.5rem;
+  justify-items: center;
+  padding-block: 4rem;
+
+  border-top-right-radius: 6rem;
+  background-color: var(--accent-dark-black-blue);
+  text-align: center;
+  font-family: var(--ubuntu);
+}
+
+.links{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.links p {
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-18);
+}
+
+.links ul {
+  color: var(--accent-grayish-blue);
 }
