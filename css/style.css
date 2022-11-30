@@ -71,6 +71,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  margin-inline: auto;
 }
 
 a {
@@ -257,8 +258,11 @@ ul {
 
 .infrastructure__illustration {
   position: absolute;
+  max-width: 400px;
+  width: 100%;
   top: -12rem;
   left: 0;
+  right: 0;
 }
 
 .infrastructure__text {
