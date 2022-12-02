@@ -30,6 +30,18 @@
   --p-24: 1.5rem;
 }
 
+@media screen and (min-width: 36em) {
+  :root {
+    --p-24: 3rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  :root {
+    --p-24: 5rem;
+  }
+}
+
 .clr-headings {
   color: var(--primary-very-dark-blue);
 }
@@ -156,6 +168,7 @@ ul {
   text-align: center;
   padding-inline: var(--p-24);
 }
+
 
 .hero > :nth-child(3) {
   justify-self: end;
