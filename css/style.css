@@ -249,3 +249,14 @@ ul {
 .infrastructure__paragraph {
   color: var(--accent-grayish-blue);
 }
+
+/* FREE POWERFUL */
+.free-powerful {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.free-powerful__text {
+  padding-inline: 2.5rem;
+}
