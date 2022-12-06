@@ -260,3 +260,28 @@ ul {
 .free-powerful__text {
   padding-inline: 2.5rem;
 }
+
+/* FOOTER */
+.doc-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: 5rem;
+
+  text-align: center;
+  background-color: var(--accent-dark-black-blue);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links p {
+  font-weight: var(--fw-semibold);
+}
+
+.links a {
+  color: var(--accent-grayish-blue);
+}
