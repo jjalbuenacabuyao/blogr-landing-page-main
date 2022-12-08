@@ -252,6 +252,8 @@ ul {
 .infrastructure__illustration {
   position: absolute;
   bottom: 65%;
+  right: 0;
+  left: 0;
 }
 
 .infrastructure__title {
