@@ -113,7 +113,7 @@ ul {
 
 @media screen and (min-width: 48em){
   .text-container {
-    padding-inline: 5rem;
+    padding-inline: 8rem;
   }
 }
 
@@ -249,11 +249,24 @@ ul {
   border-bottom-left-radius: 6rem;
 }
 
+@media screen and (min-width: 48em){
+  .infrastructure {
+    padding-block-start: 15rem;
+    margin-block-start: 20rem;
+  }
+}
+
 .infrastructure__illustration {
   position: absolute;
   bottom: 65%;
   right: 0;
   left: 0;
+}
+
+@media screen and (min-width: 48em){
+  .infrastructure__illustration {
+    bottom: 58%;
+  }
 }
 
 .infrastructure__title {
@@ -273,6 +286,12 @@ ul {
 
 .free-powerful__text {
   padding-inline: 2.5rem;
+}
+
+@media screen and (min-width: 48em){
+  .free-powerful__text {
+    padding-inline: 8rem;
+  }
 }
 
 /* FOOTER */
