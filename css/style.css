@@ -284,4 +284,6 @@ ul {
 
 .links a {
   color: var(--accent-grayish-blue);
+  font-family: var(--ubuntu);
+  font-weight: var(--fw-medium);
 }
