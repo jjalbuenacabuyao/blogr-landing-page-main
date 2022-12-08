@@ -157,6 +157,12 @@ ul {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 48em){
+  .header {
+    padding: 5rem 5rem 0;
+  }
+}
+
 .nav-toggle {
   width: 2rem;
   height: 1.125rem;
