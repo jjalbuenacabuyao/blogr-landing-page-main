@@ -30,6 +30,12 @@
   --p-24: 1.5rem;
 }
 
+@media screen and (min-width: 48em) {
+  :root {
+    --p-24: 3.5rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -103,6 +109,12 @@ ul {
   flex-direction: column;
   gap: 2rem;
   padding-inline: 2.5rem;
+}
+
+@media screen and (min-width: 48em){
+  .text-container {
+    padding-inline: 5rem;
+  }
 }
 
 /* Main Styles
