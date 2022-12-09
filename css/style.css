@@ -264,14 +264,14 @@ ul {
 
 .infrastructure__illustration {
   position: absolute;
-  bottom: 65%;
+  top: -15rem;
   right: 0;
   left: 0;
 }
 
 @media screen and (min-width: 48em){
   .infrastructure__illustration {
-    bottom: 58%;
+    top: -20rem;
   }
 }
 
