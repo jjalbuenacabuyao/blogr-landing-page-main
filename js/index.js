@@ -4,10 +4,18 @@ const nav = document.querySelector(".nav")
 navToggler.addEventListener("click", () => {
   let isVisible = nav.getAttribute("data-visible")
   if (isVisible == "false"){
-    navToggler.setAttribute("aria-expanded", true)
-    nav.setAttribute("data-visible", true)
+    showNav()
   } else {
-    navToggler.setAttribute("aria-expanded", false)
-    nav.setAttribute("data-visible", false)
+    hideNav()
   }
 })
+
+const showNav = () => {
+  navToggler.setAttribute("aria-expanded", true)
+  nav.setAttribute("data-visible", true)
+}
+
+const hideNav = () => {
+  navToggler.setAttribute("aria-expanded", false)
+  nav.setAttribute("data-visible", false)
+}
